@@ -1,4 +1,4 @@
-package com.amos.server.main;
+package com.amos.server.data;
 
 public class Data {
 

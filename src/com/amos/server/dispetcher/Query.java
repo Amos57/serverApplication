@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.Socket;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 import com.amos.server.annotation.HttpServet;
@@ -22,6 +21,7 @@ public class Query {
 	private HttpServet servet;
 	private ServletLoader sl= ServletLoader.getInstance();
 	public Query(Socket socket) throws IOException {
+		
 		BufferedReader br= new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		BufferedWriter bw= new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
 		request= new HttpRequest(br);

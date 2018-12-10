@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.amos.server.annotation.HttpServet;
-import com.amos.server.main.Logger;
+import com.amos.server.data.Logger;
 
 
 public class ServletLoader {

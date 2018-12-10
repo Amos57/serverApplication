@@ -4,7 +4,7 @@ public class DivElement extends AbstractHTMLElement{
 
 	
 	private String value="";
-	private String title ;
+	private String title="" ;
 	
 	
 	@Override
