@@ -1,4 +1,4 @@
-package com.amos.server.dispetcher;
+package com.amos.server.despetcher;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

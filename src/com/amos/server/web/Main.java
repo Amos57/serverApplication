@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.amos.server.dispetcher.Query;
+import com.amos.server.despetcher.Query;
 
 public class Main {
 

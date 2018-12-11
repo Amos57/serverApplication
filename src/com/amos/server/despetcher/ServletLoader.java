@@ -1,4 +1,4 @@
-package com.amos.server.dispetcher;
+package com.amos.server.despetcher;
 
 import java.io.File;
 import java.util.HashMap;
@@ -18,7 +18,7 @@ public class ServletLoader {
 		private ServletLoader(){
 		File classes= new File("src/com/amos/server/servlets");
 		File[] arrClasses=classes.listFiles();
-		logger.debug("получение файлов "+arrClasses.length);
+		logger.debug("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "+arrClasses.length);
 		for(File file : arrClasses){
 			String className=file.getName().substring(0,file.getName().indexOf("."));
 			Class<?> servlet = null;
@@ -35,7 +35,7 @@ public class ServletLoader {
 				
 			}
 		}
-		logger.debug("сервлеты собраны "+servlets);
+		logger.debug("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ "+servlets);
 	}
 	public static ServletLoader getInstance(){
 		if(servletLoader==null)
