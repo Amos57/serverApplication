@@ -1,12 +1,4 @@
-package com.amos.server.web;
-
-import java.util.Map;
-
-public interface Request {
-
-	
-	
-	/**
+p	/**
 	 * get value from html input
 	 */
 	String getParametr(String name);
@@ -25,7 +17,9 @@ public interface Request {
 	
 	String getRemoteAddr();
 	
+	JSONObject getJsonObject(String name);
 	
+	JsonArray<?> getJsonArray(String name);
 	
 	String getRemoteUser();
 	
@@ -34,5 +28,3 @@ public interface Request {
 	
 	
 	String getMethod();
-	
-}
