@@ -27,7 +27,7 @@ public class HttpRequest implements Request{
 	  method=line.substring(0,line.indexOf(" "));
 	  urlRequst=line.substring(method.length()+2,line.lastIndexOf(" "));
 	  }
-	  while(!(line=input.readLine()).equals("")){
+	  while(!"".equals((line=input.readLine())) && line !=null){
 		  
 		  String key=line.substring(0,line.indexOf(" "));
 		  System.out.println(line);
@@ -130,5 +130,19 @@ public class HttpRequest implements Request{
 	@Override
 	public String getURL() {
 		return urlRequst;
+	}
+
+
+	@Override
+	public JSONObject getJsonObject(String name) {
+		return JSONObject.getJsonObject(name, values.toString());
+	}
+
+
+
+	@Override
+	public JsonArray<?> getJsonArray(String name) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
